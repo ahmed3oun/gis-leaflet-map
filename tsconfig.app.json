@@ -4,12 +4,17 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
+    "paths": {
+      "@assets/*" : ["./public/assets/*"],
+      "@types": ["./src/utils/types"],
+      "@types/*": ["./src/utils/types/*"],
+    },
     "types": []
   },
   "files": [
     "src/main.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
   ]
 }

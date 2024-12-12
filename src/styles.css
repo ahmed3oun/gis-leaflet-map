@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./../node_modules/leaflet/dist/leaflet.css";
+@import './../node_modules/@ng-vibe/drawer/styles/styles.css';
+
+body {
+  height: 100vh;
+  width: 100wh;
+  margin: 0;
+  padding: -0.15rem;
+  background-color: azure;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: #fffdfd;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #adadad, #3776a9, #adadad);
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+}
+
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #cfcfcf, #484848, #cfcfcf);
+  cursor: -webkit-grab;
+}
+
+*::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
